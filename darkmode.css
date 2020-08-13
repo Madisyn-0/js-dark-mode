@@ -2,21 +2,35 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+}
+
+.mode-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 .header{
     max-width: 500px;
-    margin: 50px auto;
-    background-color: white;
+    margin: 50px auto;    
     justify-content: center;
     text-align: center;
 }
 
-.sidebar-1 {
+
+.sidebar-1{
     order: 1;
     margin-right: 20px;
 
+}
+.light{
+    color: rgb(29, 29, 29);
+    background-color: #fff;
+}
+
+.dark{
+    color: #fff;
+    background-color: rgb(29, 29, 29);
 }
 
 .main-content {
@@ -30,7 +44,6 @@ html, body{
 }
 .content, .flash-cards, .table{
     max-width: 1200px;
-    background-color: white;
     padding: 20px;
     margin: 0 auto;
     display: flex;
@@ -38,15 +51,28 @@ html, body{
 
 .flash-cards {
     justify-content: space-between;
+    background-color: transparent;
 }
 
-.card{
+.card{    
     padding: 25px;
     box-sizing: border-box;
     margin-bottom: 20px;
     margin: 20px;
+    /* box shadow  */
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(233, 240, 247, 1);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(233, 240, 247, 1);
+    box-shadow: 7px 7px 5px 3px rgba(233, 240, 247, 1);
+    border-radius: 10px;
 }
 
+.card.dark {
+    /* box shadow  */
+    -webkit-box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+    -moz-box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+    box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+    border-radius: 10px;
+}
 .card-1{
     background-color: lightpink;
 }
@@ -61,13 +87,12 @@ html, body{
 
 .table{
     max-width: 850px;
-    background-color: antiquewhite;
     margin-bottom: 50px;
+    background-color: transparent;
     
 }
 
 .main-page{
-    background-color: rgb(113, 243, 182);
     padding: 15px;
     width: 50%;
     text-align: center;
@@ -105,6 +130,12 @@ html, body{
         margin: 0;
         padding: 0;
         background-color: antiquewhite;
+    }
+
+    .mode-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
     }
     
     .header{
